@@ -43,12 +43,14 @@ int main() {
             break;
         }
     }
-    if (change1 != goods[0]){
-        cout << "第一個人買" << 100 - goods[0] << "元和" << 100 - (change1 - goods[0]) << "元" << endl;
-        cout << "第二個人買" << 100 - people2 << "元" << endl;
-    } else {
-        cout << "第一個人買" << 100 - goods[0] << "元" << endl;
-        cout << "第二個人買" << 100 - people2 << "元和" << 100 - (change2 - people2) << "元" << endl;
+    if (n <= 3){
+        if (change1 != goods[0]){
+            cout << "第一個人買" << 100 - goods[0] << "元和" << 100 - (change1 - goods[0]) << "元" << endl;
+            cout << "第二個人買" << 100 - people2 << "元" << endl;
+        } else {
+            cout << "第一個人買" << 100 - goods[0] << "元" << endl;
+            cout << "第二個人買" << 100 - people2 << "元和" << 100 - (change2 - people2) << "元" << endl;
+        }
     }
     
     
