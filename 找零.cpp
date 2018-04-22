@@ -22,9 +22,6 @@ int main() {
 	        }
 	    }
 	}
-	for(int i = 0; i < n; i++){
-        cout << goods[i] << endl;
-    }
     int change1 = 0;
 	for (int j = 0; j < n; j ++){
 	    if (goods[0] + goods[j] < 100){
@@ -34,17 +31,11 @@ int main() {
 	        break;
 	    }
 	}
-	cout << change1 << endl;
-	//for(int i = 0; i < n; i++){
-    //    cout << goods[i] << endl;
-    //}
 	int total = 0;
 	for(int i = 0; i < n; i ++){
 	    total = total + goods[i];
 	}
-	//cout << total << endl;
 	int change2 = (total - change1);
-    cout << change2;
     int people2 = 0;
     for(int i = 1; i < n; i++){
         if (goods[i] != change1 - goods[0]){
